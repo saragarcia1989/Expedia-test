@@ -2,7 +2,7 @@
 Documentation
 -------------
 
-This project contains an automated test for the website www.expedia.com. It is runnable in Chrome and
+This project contains an automated test for the website www.expedia.com. It is runnable in Chrome and Firefox, and
 has the following scenario:
 
 1.	Go to site http://www.expedia.com
