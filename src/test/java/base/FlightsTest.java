@@ -16,8 +16,8 @@ public class FlightsTest extends BaseTests {
         flightsPage.selectAirport("Heathrow");
         flightsPage.insertDestination("Dublin");
         flightsPage.selectAirport("Dublin");
-        flightsPage.selectDepartureDate("Sep 5, 2021");
-        flightsPage.selectReturningDate("Sep 20, 2021");
+        flightsPage.selectDepartureDate("Oct 20, 2021");
+        flightsPage.selectReturningDate("Oct 31, 2021");
         flightsPage.selectTravelers();
 
         FlightsResultsPage flightsResultsPage = flightsPage.clickSearchButton();
@@ -48,7 +48,7 @@ public class FlightsTest extends BaseTests {
          */
         flightsResultsPage.scrollToBottom();
 
-        Assert.assertTrue(flightsResultsPage.getBottomText().contains("© 2021 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc. CST# 2029030-50."),
+        Assert.assertTrue(flightsResultsPage.getBottomText().contains("© 2021 Expedia, Inc., an Expedia Group company. All rights reserved."),
                 ">>>Different text<<<");
     }
 
